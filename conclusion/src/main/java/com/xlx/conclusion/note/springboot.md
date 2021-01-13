@@ -452,3 +452,44 @@ thymeleaf的语法规则：通过自动配置去看默认规则在进行语法�
 ![image-20201211141751091](C:\Users\19586\AppData\Roaming\Typora\typora-user-images\image-20201211141751091.png)
 
 ![image-20201211141830385](C:\Users\19586\AppData\Roaming\Typora\typora-user-images\image-20201211141830385.png)
+
+
+
+
+
+**springbootweb - crud**
+
+1. 如何使得springboot访问到首页？
+
+![image-20210113140508037](C:\Users\19586\AppData\Roaming\Typora\typora-user-images\image-20210113140508037.png)
+
+springboot的默认配置中，直接访问localhost:8080会去静态资源文件加下去找对应的index文件，比如public下的index.html会默认进行访问。前提是不接管springmvc
+
+**我们如何自定义进行访问首页，而不使用springboot指定位置的首页？**
+
+1. 方法一：使用一个空方法进行映射，使得请求映射到对应的页面
+
+   ![image-20210113142116655](C:\Users\19586\AppData\Roaming\Typora\typora-user-images\image-20210113142116655.png)
+
+2. 方法
+
+![image-20210113191202287](C:\Users\19586\AppData\Roaming\Typora\typora-user-images\image-20210113191202287.png)
+
+![image-20210113191445774](C:\Users\19586\AppData\Roaming\Typora\typora-user-images\image-20210113191445774.png)
+
+**国际化**
+
+![image-20210113192254083](C:\Users\19586\AppData\Roaming\Typora\typora-user-images\image-20210113192254083.png)
+
+![image-20210113192938216](C:\Users\19586\AppData\Roaming\Typora\typora-user-images\image-20210113192938216.png)
+
+![image-20210113193143579](C:\Users\19586\AppData\Roaming\Typora\typora-user-images\image-20210113193143579.png)
+
+**全局设置**
+
+![image-20210113193233855](C:\Users\19586\AppData\Roaming\Typora\typora-user-images\image-20210113193233855.png)
+
+**点击实现国际化**（**自定义区域信息解析器**）
+
+![image-20210113194222755](C:\Users\19586\AppData\Roaming\Typora\typora-user-images\image-20210113194222755.png)
+
